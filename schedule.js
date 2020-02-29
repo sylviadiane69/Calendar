@@ -15,9 +15,9 @@ for(var i = 0; i < hours.length; i++){
     var SaveBtn = $('<button>').addClass('saveBtn col-1');
     //save button
     SaveBtn.html('<i class="fas fa-archive"></i>')
-    hourBlock.text(moment(time[i], 'h A').format('hh A'));
+    hourBlock.text(moment(hours[i], 'h A').format('hh A'));
     //console.log
-    console.log(moment(time[i], 'h A').format('hh A'));
+    console.log(moment(hours[i], 'h A').format('hh A'));
     //append
     timeBlock.append(hourBlock);
     container.append(timeBlock);
